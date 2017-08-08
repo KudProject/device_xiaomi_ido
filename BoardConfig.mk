@@ -40,6 +40,16 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 TARGET_NO_BOOTLOADER := true
 
+# Snapdragon LLVM
+ifeq ($(HOST_OS),linux)
+  TARGET_USE_SDCLANG := true
+  ifeq ($(TARGET_USE_SDCLANG),true)
+    SDCLANG := true
+    SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
+    SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
+  endif
+endif
+
 # Cpusets
 ENABLE_CPUSETS := true
 
