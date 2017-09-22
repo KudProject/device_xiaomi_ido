@@ -47,6 +47,7 @@ ifeq ($(HOST_OS),linux)
     SDCLANG := true
     SDCLANG_PATH := prebuilts/clang/linux-x86/host/sdclang-3.8/bin
     SDCLANG_LTO_DEFS := device/qcom/common/sdllvm-lto-defs.mk
+    SDCLANG_COMMON_FLAGS := -O3 -fvectorize-loops
   endif
 endif
 
