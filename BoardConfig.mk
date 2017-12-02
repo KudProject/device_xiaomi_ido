@@ -134,6 +134,9 @@ TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Malloc
+MALLOC_SVELTE := true
+
 # Partitions
 # /proc/partitions * 2 * BLOCK_SIZE (512) = size in bytes
 BOARD_BOOTIMAGE_PARTITION_SIZE := 33554432
