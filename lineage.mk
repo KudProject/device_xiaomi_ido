@@ -27,5 +27,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BUILD_FINGERPRINT="Xiaomi/ido/ido:5.1.1/LMY47V/V9.2.1.0.LAIMIEK:user/release-keys" \
     PRIVATE_BUILD_DESC="ido-user 5.1.1 LMY47V V9.2.1.0.LAIMIEK release-keys"
+
+BUILD_FINGERPRINT="Xiaomi/ido/ido:5.1.1/LMY47V/V9.2.1.0.LAIMIEK:user/release-keys"
