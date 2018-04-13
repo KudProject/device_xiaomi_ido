@@ -1,14 +1,14 @@
 # ACDB Loader
-etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
-etc/acdbdata/QRD/QRD_General_cal.acdb
-etc/acdbdata/QRD/QRD_Global_cal.acdb
-etc/acdbdata/QRD/QRD_Handset_cal.acdb
-etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
-etc/acdbdata/QRD/QRD_Headset_cal.acdb
-etc/acdbdata/QRD/QRD_Speaker_cal.acdb
+etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
+etc/acdbdata/QRD/QRD_General_cal.acdb:vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
+etc/acdbdata/QRD/QRD_Global_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Global_cal.acdb
+etc/acdbdata/QRD/QRD_Handset_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Handset_cal.acdb
+etc/acdbdata/QRD/QRD_Hdmi_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Hdmi_cal.acdb
+etc/acdbdata/QRD/QRD_Headset_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Headset_cal.acdb
+etc/acdbdata/QRD/QRD_Speaker_cal.acdb:vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb
 
 # ADSP
-bin/adsprpcd
+bin/adsprpcd:vendor/bin/adsprpcd
 vendor/lib64/libadsprpc.so
 vendor/lib/libadsprpc.so
 vendor/lib/libfastcvopt.so
@@ -33,8 +33,8 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # Bluetooth
-bin/btnvtool
-bin/hci_qcomm_init
+bin/btnvtool:vendor/bin/btnvtool
+bin/hci_qcomm_init:vendor/bin/hci_qcomm_init
 vendor/lib64/libbtnv.so
 
 # BMS
@@ -220,10 +220,10 @@ vendor/lib/libmmcamera_ov5670_eeprom.so
 vendor/lib/libmmcamera_ov13853_eeprom.so
 
 # Camera firmware
-etc/firmware/cpp_firmware_v1_1_1.fw
-etc/firmware/cpp_firmware_v1_1_6.fw
-etc/firmware/cpp_firmware_v1_2_0.fw
-etc/firmware/cpp_firmware_v1_4_0.fw
+etc/firmware/cpp_firmware_v1_1_1.fw:vendor/firmware/cpp_firmware_v1_1_1.fw
+etc/firmware/cpp_firmware_v1_1_6.fw:vendor/firmware/cpp_firmware_v1_1_6.fw
+etc/firmware/cpp_firmware_v1_2_0.fw:vendor/firmware/cpp_firmware_v1_2_0.fw
+etc/firmware/cpp_firmware_v1_4_0.fw:vendor/firmware/cpp_firmware_v1_4_0.fw
 
 # Camera sensors
 vendor/lib/libmmcamera_s5k3l8.so
@@ -271,11 +271,11 @@ vendor/lib/libdpmtcm.so|76a8e2ef58be9df411643d686cf2bd7216b629e1
 vendor/lib/libvendorconn.so|6c8876c514d0aef4ae1b4a1d7cb03d431c2c462c
 
 # ConsumerIR
-lib/hw/consumerir.msm8916.so
-lib64/hw/consumerir.msm8916.so
+lib/hw/consumerir.msm8916.so:vendor/lib/hw/consumerir.msm8916.so
+lib64/hw/consumerir.msm8916.so:vendor/lib64/hw/consumerir.msm8916.so
 
 # DRM (From kipper)
-bin/qseecomd|74e6868aaf9c7bae0669eaf92ecbcb525aecb935
+bin/qseecomd:vendor/bin/qseecomd|74e6868aaf9c7bae0669eaf92ecbcb525aecb935
 vendor/lib64/libdrmfs.so|327ed1df2de3becb6518da16c8765c955c1a33bc
 vendor/lib64/libdrmtime.so|c022bb97f0f74cc98bd2fc26dc9b804e3e48e3ea
 vendor/lib64/libQSEEComAPI.so|b6c177649f7365376969d7aa9426fa97de5d7cfe
@@ -291,10 +291,10 @@ vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
 
 # GPS (From crackling)
--lib64/libloc_api_v02.so|ca97a81ea91ca5c7d8dd8c9a9054121ce1446b8a
--lib64/libloc_ds_api.so|c2ed259789fe01aeced4e06ad1693036852daf7c
--lib/libloc_api_v02.so|74df1667c42701ef550ba73db6c5ae63542913ac
--lib/libloc_ds_api.so|2124d2df231d1e3ccb7f22c6227f6112f4013485
+-lib64/libloc_api_v02.so:vendor/lib64/libloc_api_v02.so|ca97a81ea91ca5c7d8dd8c9a9054121ce1446b8a
+-lib64/libloc_ds_api.so:vendor/lib64/libloc_ds_api.so|c2ed259789fe01aeced4e06ad1693036852daf7c
+-lib/libloc_api_v02.so:vendor/lib/libloc_api_v02.so|74df1667c42701ef550ba73db6c5ae63542913ac
+-lib/libloc_ds_api.so:vendor/lib/libloc_ds_api.so|2124d2df231d1e3ccb7f22c6227f6112f4013485
 vendor/lib64/hw/flp.default.so|03784211a3d7c144c0bc6f86b50d1cc5eb97f8c5
 vendor/lib64/libflp.so|33793c405cf39858854c8023dec4b4e0d9d79ff0
 vendor/lib64/libgeofence.so|23cb999eb444971170ff60873392706cf003ed23
@@ -361,11 +361,11 @@ vendor/lib/libsc-a3xx.so|a03fc9f0c929cb4adf013f8a463cfbef68d48090
 vendor/lib/libscale.so|972cbd87794b4ce0a5c23db946acbafd4cd6d073
 
 # Graphics firmware (From crackling)
-etc/firmware/a420_pfp.fw|ceb61d9f1385b3f2956d72f33e0bd43cb12f72f0
-etc/firmware/a420_pm4.fw|96addc1f5cb6dd3a57fc40ef0a6ba8721d5b601f
+etc/firmware/a420_pfp.fw:vendor/firmware/a420_pfp.fw|ceb61d9f1385b3f2956d72f33e0bd43cb12f72f0
+etc/firmware/a420_pm4.fw:vendor/firmware/a420_pm4.fw|96addc1f5cb6dd3a57fc40ef0a6ba8721d5b601f
 
 # Media
-lib/libOmxVdecHevc.so
+lib/libOmxVdecHevc.so:vendor/lib/libOmxVdecHevc.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
@@ -376,7 +376,7 @@ vendor/lib64/libqti-perfd-client.so
 vendor/lib/libqti-perfd-client.so
 
 # Postprocessing
-bin/mm-pp-daemon
+bin/mm-pp-daemon:vendor/bin/mm-pp-daemon
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libmm-abl.so
 vendor/lib64/libmm-abl-oem.so
@@ -389,7 +389,7 @@ vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-qdcm.so
 
 # Qualcomm framework (from crackling)
-bin/irsc_util|9f92211cb3f8f76195aec1081f8a58aa8d456b07
+bin/irsc_util:vendor/bin/irsc_util|9f92211cb3f8f76195aec1081f8a58aa8d456b07
 vendor/lib64/libdiag.so|0dfd85d01bd529f97b03876d90447773dad2704e
 vendor/lib64/libdsi_netctrl.so|bfbfcb7e90c99466fa76d96881fc8f62baa0a7e2
 vendor/lib64/libdsutils.so|0bea6dcf5a98c12cf673ad8107c7eef25591832f
@@ -451,7 +451,7 @@ vendor/lib64/libxml.so|ca5f99d9fd4e44dd5bc357d0b84272bb365cd629
 vendor/lib/libmdmdetect.so|259b9a5ddbc56e42273879b36f8ec9892f2e3c08
 
 # Sensors
-lib64/hw/sensors.msm8916.so
+lib64/hw/sensors.msm8916.so:vendor/lib64/hw/sensors.msm8916.so
 vendor/lib64/libcalmodule_akm.so
 vendor/lib64/libcalmodule_common.so
 vendor/lib64/libcalmodule_gyroscope.so
@@ -459,13 +459,13 @@ vendor/lib64/libcalmodule_yamaha.so
 vendor/lib64/libcalmodule_senodia.so
 
 # Signed Venus (media) firmware
-etc/firmware/venus.b00
-etc/firmware/venus.b01
-etc/firmware/venus.b02
-etc/firmware/venus.b03
-etc/firmware/venus.b04
-etc/firmware/venus.mbn
-etc/firmware/venus.mdt
+etc/firmware/venus.b00:vendor/firmware/venus.b00
+etc/firmware/venus.b01:vendor/firmware/venus.b01
+etc/firmware/venus.b02:vendor/firmware/venus.b02
+etc/firmware/venus.b03:vendor/firmware/venus.b03
+etc/firmware/venus.b04:vendor/firmware/venus.b04
+etc/firmware/venus.mbn:vendor/firmware/venus.mbn
+etc/firmware/venus.mdt:vendor/firmware/venus.mdt
 
 # STLport
 vendor/lib/libstlport.so
@@ -477,8 +477,8 @@ vendor/lib64/libthermalioctl.so
 vendor/lib/libthermalclient.so
 
 # Time services
--app/TimeService/TimeService.apk
-bin/time_daemon
+-app/TimeService/TimeService.apk:vendor/app/TimeService/TimeService.apk
+bin/time_daemon:vendor/bin/time_daemon
 -vendor/lib64/libtime_genoff.so
 -vendor/lib/libtime_genoff.so
 vendor/lib64/libTimeService.so
